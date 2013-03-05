@@ -1,0 +1,25 @@
+#author:   liubiao
+#date:     2013-03-04
+#function: start the websocket server,if the server existed,restart after killed
+
+path=/home/www/sites/kti.xd.com/websocket/index.js
+
+log_path=/var/log/websocket.log
+
+old_pid=`ps aux | grep $path | grep -v grep | awk '{print $2}'`
+
+#echo $old_pid
+
+if [ "$old_pid" = ""  ];then
+	echo ''
+else
+	kill $old_pid
+	rm -rf $log_path
+	echo "kill old websocket pid $old_pid  success!"
+fi
+
+#nohup node $path >/dev/null 2>&1 &
+
+nohup node $path >$log_path 2>&1 &
+
+echo "websocket new server start success!"
