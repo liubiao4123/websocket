@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>websocket实例</title>
+<script type="text/javascript" src="socket.io.min.js" ></script>
+</head>
+<body>
+
+<div id="my_div"></div>
+<input type="text" id="max_id" value=0 style="display: none;">
+<script type="text/javascript">
+var socket = io.connect("http://127.0.0.1:8880/?game=ktpd&time=&sign=1");
+
+socket.on('new_income',function( data ){
+	if (data) for (var i in data)
+	{
+		document.getElementById("max_id").value = data[i].id;
+		var new_html = "<div>"+data[i].content+"</div>";
+		var div = document.getElementById("my_div").innerHTML += new_html;
+	}
+});
+
+//获取最新充值数据
+function get_new_income()
+{
+	var id = document.getElementById("max_id").value;
+	id = id?id:0;
+
+	//表示权限，每个client端的权限可能都不一样
+	var channel_ids = [1,2];
+
+	//请求websocket服务器
+	socket.emit('new_income',{id:id,channel_ids:channel_ids});
+
+	//5秒请求一次
+	setTimeout(get_new_income,5000);
+}
+
+setTimeout(get_new_income,2000);
+</script>
+</body>
+</html>
+
