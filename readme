@@ -1,15 +1,15 @@
-node.jsÏÖ³ÉÄ£¿ésocket.io¼òµ¥´î½¨µÄwebsocket£¬ÊµÏÖä¯ÀÀÆ÷¶ËÓë·þÎñÆ÷¶ËµÄ¼°Ê±Í¨Ñ¶¡£
+node.jsï¿½Ö³ï¿½Ä£ï¿½ï¿½socket.ioï¿½òµ¥´î½¨ï¿½ï¿½websocketï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ËµÄ¼ï¿½Ê±Í¨Ñ¶ï¿½ï¿½
 
-Ê×ÏÈ£¬°²×°node.js,ÐèÒªµÄÄ£¿éÓÐ£ºhttp,socket.io,mysql,nodegrass
+ï¿½ï¿½ï¿½È£ï¿½ï¿½ï¿½×°node.js,ï¿½ï¿½Òªï¿½ï¿½Ä£ï¿½ï¿½ï¿½Ð£ï¿½http,socket.io,mysql,nodegrass
 
-°²×°²½ÖèºÜ¼òµ¥£¬Èç£ºnpm install http;
+ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½Ü¼òµ¥£ï¿½ï¿½ç£ºnpm install http;
 
-mysql.jsÖ÷ÒªÊÇÊµÏÖµÄmysqlÒ»Ð©ÅäÖÃ£¬¿ÉÒÔÖ§³Ö¶à¸ömyql£¬Í¬Ê±remoteÊÇ±íÊ¾Ô¶³ÌÍ¨¹ýurlÇëÇóÊý¾Ý£¬Êý¾Ý¿âÁ¬½Ó¶¼ÒÑ¾­·â×°ºÃ£¬mysql.connect();mysql.close();Í¬Ê±ÓÐÏàÓ¦µÄ´íÎó´¦Àí»úÖÆ¡£
+mysql.jsï¿½ï¿½Òªï¿½ï¿½Êµï¿½Öµï¿½mysqlÒ»Ð©ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½Ö§ï¿½Ö¶ï¿½ï¿½myqlï¿½ï¿½Í¬Ê±remoteï¿½Ç±ï¿½Ê¾Ô¶ï¿½ï¿½Í¨ï¿½ï¿½urlï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½Ó¶ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½×°ï¿½Ã£ï¿½mysql.connect();mysql.close();Í¬Ê±ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¡ï¿½
 
-md5.jsÊÇjavascriptÊµÏÖµÄmd5¼ÓÃÜËã·¨£¬ÎªÑéÖ¤signÇ©Ãû£¬°²È«»úÖÆ¡£
+md5.jsï¿½ï¿½javascriptÊµï¿½Öµï¿½md5ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨ï¿½ï¿½Îªï¿½ï¿½Ö¤signÇ©ï¿½ï¿½È«ï¿½ï¿½ï¿½Æ¡ï¿½
 
-websocket.jsÊÇÖ÷º¯Êý£¬start()º¯ÊýÆô¶¯socket·þÎñÆ÷£¬get_new_income()º¯ÊýºóÌ¨Ñ­»·»ñÈ¡ÐÂÊý¾Ý£¬²¢´æÈëÄÚ´æ£¬µ±ÓÐ¿Í»§¶ËÇëÇóµÄÊ±ºò¼°Ê±´«ËÍÊµÊ±Êý¾Ý¡£ÎªÁË²âÊÔÍ¨¹ý£¬180ÐÐ×¢ÊÍÁËÖ÷º¯Êý£¬¼ÓÈëµ÷ÊÔ´úÂë¡£
+websocket.jsï¿½ï¿½ï¿½ï¿½ï¿½ï¿½start()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½socketï¿½ï¿½ï¿½ï¿½ï¿½ï¿½get_new_income()ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨Ñ­ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´æ£¬ï¿½ï¿½ï¿½Ð¿Í»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ÊµÊ±ï¿½ï¿½Ý¡ï¿½Îªï¿½Ë²ï¿½ï¿½ï¿½Í¨ï¿½ï¿½180ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½ë¡£
 
-Æô¶¯³ÌÐò£ºnode index.js,ä¯ÀÀÆ÷´ò¿ªindex.html¼´¿É¿´µ½Ð§¹û¡£
+ï¿½ï¿½ï¿½ï¿½ï¿½node index.js,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½index.htmlï¿½ï¿½ï¿½É¿ï¿½ï¿½ï¿½Ð§ï¿½ï¿½
 
-¿¿¿¿¿¿¿¿http://liubiao4123.com/nodejs-websocket.html
+ä¸‹é¢æ˜¯è¯¦ç»†æè¿°ï¼šhttp://liubiao4123.com/nodejs-websocket.html
