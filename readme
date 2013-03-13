@@ -11,3 +11,5 @@ md5.js是javascript实现的md5加密算法，为验证sign签名，安全机制。
 websocket.js是主函数，start()函数启动socket服务器，get_new_income()函数后台循环获取新数据，并存入内存，当有客户端请求的时候及时传送实时数据。为了测试通过，180行注释了主函数，加入调试代码。
 
 启动程序：node index.js,浏览器打开index.html即可看到效果。
+
+靠靠靠靠<a href="http://liubiao4123.com/nodejs-websocket.html" target="_blank">http://liubiao4123.com/nodejs-websocket.html</a>
